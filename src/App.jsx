@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
 import logo from "./assets/logo.png";
+import villa1 from "./assets/villa1.png";
+import villa2 from "./assets/villa2.png";
+import villa3 from "./assets/villa3.png";
+import coverImage from "./assets/cover.png";
 
 const sections = {
   en: [
@@ -19,7 +23,7 @@ const sections = {
           name: "Villa Serenity",
           price: "$2,500/month",
           description: "Luxury 3-bedroom villa with mountain views",
-          image: "./src/assets/villa1.png",
+          image: villa1,
           details: {
             bedrooms: 3,
             bathrooms: 2,
@@ -39,7 +43,7 @@ const sections = {
           name: "Villa Harmony",
           price: "$3,200/month",
           description: "Modern 4-bedroom villa with pool access",
-          image: "./src/assets/villa2.png",
+          image: villa2,
           details: {
             bedrooms: 4,
             bathrooms: 3,
@@ -59,7 +63,7 @@ const sections = {
           name: "Villa Tranquility",
           price: "$2,800/month",
           description: "Cozy 2-bedroom villa with private garden",
-          image: "./src/assets/villa3.png",
+          image: villa3,
           details: {
             bedrooms: 2,
             bathrooms: 2,
@@ -134,7 +138,7 @@ const sections = {
           name: "ვილა სერენიტი",
           price: "$2,500/თვე",
           description: "ლუქსუს 3-ოთახიანი ვილა მთის ხედებით",
-          image: "./src/assets/villa1.png",
+          image: villa1,
           details: {
             bedrooms: 3,
             bathrooms: 2,
@@ -154,7 +158,7 @@ const sections = {
           name: "ვილა ჰარმონია",
           price: "$3,200/თვე",
           description: "თანამედროვე 4-ოთახიანი ვილა აუზის წვდომით",
-          image: "./src/assets/villa2.png",
+          image: villa2,
           details: {
             bedrooms: 4,
             bathrooms: 3,
@@ -174,7 +178,7 @@ const sections = {
           name: "ვილა სიწყნარე",
           price: "$2,800/თვე",
           description: "მყუდრო 2-ოთახიანი ვილა პირადი ბაღით",
-          image: "./src/assets/villa3.png",
+          image: villa3,
           details: {
             bedrooms: 2,
             bathrooms: 2,
@@ -255,7 +259,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="app" style={{ "--cover-bg": `url(${coverImage})` }}>
       <nav className="navbar">
         <div className="logo">
           <img
@@ -495,7 +499,7 @@ function App() {
           </div>
         )}
       </main>
-    </>
+    </div>
   );
 }
 
