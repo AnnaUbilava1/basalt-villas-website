@@ -133,6 +133,12 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
+/* Override for all sections EXCEPT home */
+.section:not(.home) {
+  min-height: auto; /* Let content determine height */
+  padding: 20px 10px 60px; /* Optional: adjust padding */
+}
+
 .section h2 {
   font-size: 28px;
   color: #46575e;
